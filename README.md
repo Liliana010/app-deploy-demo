@@ -6,7 +6,7 @@
 bash
 sudo apt update
 sudo apt install docker.io -y
-```
+
 Verifique a instalação:
 ```bash
 docker --version
