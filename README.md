@@ -3,60 +3,60 @@
 ## Comandos Essenciais do Docker
 
 ### Instalar o Docker
-bash
+
 sudo apt update
 sudo apt install docker.io -y
 
 Verifique a instalação:
-```bash
+
 docker --version
-```
+
 
 ### Construir uma Imagem Docker
-```bash
+
 docker build -t meu-app .
-```
+
 
 ### Listar Imagens Criadas
-```bash
+
 docker images
-```
+
 
 ### Rodar um Contêiner
-```bash
+
 docker run -d -p 8080:80 meu-app
-```
+
 
 ### Verificar Contêineres Ativos
-```bash
+
 docker ps
-```
+
 
 ### Parar um Contêiner
-```bash
+
 docker stop <ID_DO_CONTÊINER>
-```
+
 
 ### Ver Logs do Contêiner
-```bash
+
 docker logs <ID_DO_CONTÊINER>
-```
+
 
 ### Remover um Contêiner
-```bash
+
 docker rm <ID_DO_CONTÊINER>
-```
+
 
 ### Remover uma Imagem
-```bash
+
 docker rmi meu-app
-```
+
 
 ### Testar a Aplicação Localmente
 Acesse no navegador:
-```
+
 http://localhost:8080
-```
+
 
 ## Workflow GitHub Actions (CI/CD com Docker)
 
@@ -69,7 +69,7 @@ http://localhost:8080
 
 
 ### Arquivo `.github/workflows/main.yml`
-```yaml
+
 name: Deploy Docker App
 
 on:
@@ -94,4 +94,4 @@ jobs:
 
       - name: Rodar o contêiner
         run: docker run -d -p 8080:80 meu-app:latest
-```
+
