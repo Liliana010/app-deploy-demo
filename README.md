@@ -3,7 +3,7 @@
 ## 🐳 Comandos Essenciais do Docker
 
 ### Instalar o Docker
-```bash
+bash
 sudo apt update
 sudo apt install docker.io -y
 ```
@@ -95,10 +95,3 @@ jobs:
       - name: Rodar o contêiner
         run: docker run -d -p 8080:80 meu-app:latest
 ```
-
-## 📌 Dicas Finais
-✔ Automatize Deploys com GitHub Actions.  
-✔ Monitore erros com `docker logs`.  
-✔ Use `.dockerignore` para otimizar o tamanho da imagem.  
-
-Se precisar de mais exemplos ou explicações, me avise! 🚀
