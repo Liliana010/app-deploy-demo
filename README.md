@@ -1,6 +1,6 @@
-# 📌 Guia Rápido: Docker e GitHub Actions
+# Guia Rápido: Docker e GitHub Actions
 
-## 🐳 Comandos Essenciais do Docker
+## Comandos Essenciais do Docker
 
 ### Instalar o Docker
 bash
@@ -58,15 +58,15 @@ Acesse no navegador:
 http://localhost:8080
 ```
 
-## 🚀 Workflow GitHub Actions (CI/CD com Docker)
+## Workflow GitHub Actions (CI/CD com Docker)
 
 ### Estrutura do Projeto
-```
+
 /app-deploy-demo
 │── Dockerfile
 │── index.html
 └── .github/workflows/main.yml
-```
+
 
 ### Arquivo `.github/workflows/main.yml`
 ```yaml
